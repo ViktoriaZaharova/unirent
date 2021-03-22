@@ -1,0 +1,385 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px)
+  .main-img
+    right: -230px
+
+  .advantages-box
+    font-size: 20px
+    width: 20%
+
+  .advantages-icon
+    max-width: 90px
+    width: 100%
+
+  .collection-box
+    width: 100%
+    padding: 0
+    margin: 0 0 40px
+
+  label, .form-catalog button, .form-advantages label
+    max-width: 49%
+    width: 100%
+
+  .form-catalog h3
+    margin: 0 0 30px
+
+  .stages-work__img
+    width: 450px
+
+  .stages-work__content
+    width: calc(100% - 450px)
+
+  .stages-work
+    padding: 60px 0 43px
+
+  .system-img
+    max-width: 500px
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  main:before
+    width: 65%
+
+  .list-checkbox
+    font-size: 17.5px
+
+  h1
+    font-size: 44.5px
+
+  main .btn
+    margin: 60px auto 0
+
+  .system-box
+    font-size: 20px
+
+  .system-icon
+    max-width: 122px
+    min-width: 122px
+
+  .system-content
+    width: 400px
+
+  .logo
+    max-width: 180px
+
+  footer
+    padding: 39px 0 37px
+
+  .footer-box
+    font-size: 15px
+    max-width: 250px
+    a
+      font-size: 19px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+  .main-img
+    right: -20px
+
+    img
+      display: none
+
+    .img-mobile
+      display: block
+
+  main
+    padding: 124px 0 0
+    &:before
+      width: 60%
+
+  .btn
+    font-size: 27px
+    height: 56px
+    padding: 10px 40px
+
+  header
+    padding: 60px 0 0
+    .logo
+      max-width: 149px
+    .container
+      justify-content: space-between
+      align-items: center
+
+  .main-content
+    max-width: none
+
+  .phone
+    order: 1
+    box-shadow: -5.2px 3px 5px 0 rgba(1, 2, 1, 0.1)
+    width: 35px
+    height: 35px
+    background: url("../img/phone-mobile.png") no-repeat center
+      size: contain
+    border-radius: 50%
+
+  .main-img
+    bottom: -120px
+
+  .phone-text, .phone-icon
+    display: none
+
+  h1
+    max-width: 275px
+    font-size: 32.5px
+    br
+      display: none
+
+  h2
+    font-size: 24.5px
+
+  h3
+    font-size: 24px
+    margin: 0 0 7px
+
+  .subtitle
+    margin: 15px 0 35px
+    font-size: 20px
+    max-width: 220px
+
+  .list-checkbox
+    max-width: 230px
+
+  .title-section
+    padding: 25px 0
+    margin: 0 0 30px
+
+  .advantages
+    padding: 17px 0
+
+  .advantages-box
+    margin: 0 0 20px
+    font-size: 16px
+
+  .advantages-icon
+    max-width: 60px
+
+  .collection-box
+    flex-direction: column
+    align-items: center
+    text-align: center
+    font-size: 17px
+
+  .collection-box__content
+    width: 100%
+    padding: 0
+    margin: 40px 0 0
+
+  input
+    height: 39px
+    font-size: 18.5px
+
+  form
+    button
+      height: 48px
+      font-size: 23px
+      max-width: none
+      margin: 0 auto
+
+  .form-catalog
+    margin: 40px auto 0
+    button
+      max-width: none
+    h3
+      font-size: 24px
+
+  .corporation-collection h2
+    font-size: 24px
+
+  .subtitle-text
+    margin: 17px auto
+
+  .stages-work__wrapper
+    margin: 58px auto 0
+    flex-direction: column
+    align-items: center
+
+  .stages-work__content
+    width: 100%
+    margin: 45px auto 0
+    padding: 0 15px
+
+  .stages-work__box
+    margin: 0 auto 26px
+    font-size: 19px
+    text-align: center
+    h3
+      font-size: 24px
+
+  .stages-work__img
+    width: 100%
+    padding: 0 15px
+
+  .stages-work
+    padding: 0 0 43px
+
+    .container
+      padding: 0
+    h2
+      background: $blue
+      color: #fff
+      padding: 25px 15px
+
+
+  .system-content
+    width: 100%
+    margin: 0 auto
+
+  .system-img
+    margin: 26px auto -50px
+    order: 1
+
+  .system-wrapper
+    margin: 35px 0 0
+
+  .system
+    margin: 0 0 70px
+    padding: 42px 0 0
+
+  .system-box
+    flex-direction: column
+    align-items: center
+    text-align: center
+    margin: 0 0 34px
+
+  .system-icon
+    margin: 0 auto 11px
+
+  .input-title
+    font-size: 20px
+    min-width: 220px
+    max-width: 220px
+
+  .form-calculate textarea, .form-calculate input, select
+    width: calc(100% - 220px)
+
+  .footer-box
+    a
+      text-decoration: underline
+      color: $accent
+    &:last-child
+      order: -1
+      max-width: none
+      text-align: center
+      margin: 0 auto 40px
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px)
+  .form-catalog, .why
+    display: none
+
+  .corporation-collection
+    padding: 30px 0 50px
+
+  .banner-img
+    order: -1
+    margin: 0 -15px 16px -15px
+    width: calc(100% + 30px)
+    img
+      display: none
+      width: 100%
+    .img-mobile
+      display: block
+
+  .subtitle-text
+    margin: 17px auto 0
+
+  .stages-work
+    .form-catalog
+      display: block
+      padding: 0 15px
+      button
+        max-width: 248px
+        margin: 0 auto
+        height: 48px
+        font-size: 23px
+
+  .calculate
+    padding: 38px 0 42px
+    .subtitle-text
+      display: none
+
+  .input-title
+    display: none
+
+  .form-calculate textarea, .form-calculate input, select
+    width: 100%
+    padding: 0 11px
+
+  .form-calculate .label-message
+    display: none
+
+  .form-calculate .checkbox
+    flex-direction: column
+    align-items: flex-start
+
+  .form-calculate label
+    margin: 0 0 20px
+
+  .checkbox
+    font-size: 18px
+
+  .checkbox-custom
+    margin: 0 0 10px
+
+  .form-calculate button
+    margin: 53px auto 0
+    height: 53px
+    font-size: 26px
+    max-width: 370px
+    width: 100%
+    padding: 10px
+
+  .logo
+    max-width: 151px
+
+  .footer-box
+    line-height: 1.2
+    &:last-child
+      line-height: 1.33
+
+@media only screen and (max-width: 480px)
+  .advantages-icon
+    max-width: 50px
+    margin: 0 auto 6px
+
+  .advantages-box
+    font-size: 9.5px
+
+  .footer-box
+    max-width: 187px
+
+  .form-modal button
+    font-size: 20px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 420px)
+  .main-img
+    right: -50px
+
+  .list-checkbox
+    max-width: 200px
+    font-size: 15px
+
+  .btn
+    font-size: 22px
+    padding: 15px 30px
+
+  .collection-slider
+    width: 290px
+
+  .logo
+    max-width: 120px
+
+  .footer-box
+    font-size: 13px
+    max-width: 150px
+
+  main
+    &:before
+      width: 70%
